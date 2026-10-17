@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="320" y1="0" x2="320" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F83D8"/>
+      <stop offset="1" stop-color="#8ED7F2"/>
+    </linearGradient>
+    <linearGradient id="building" x1="315" y1="150" x2="315" y2="385" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5FAFF"/>
+      <stop offset="1" stop-color="#C6DFF4"/>
+    </linearGradient>
+    <style>
+      .cloud { animation: drift 12s ease-in-out infinite alternate; }
+      .cloud.late { animation-delay: -6s; }
+      .sparkle { animation: twinkle 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .sparkle.late { animation-delay: -1.2s; }
+      .flag { animation: wave 1.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: left center; }
+      .student { animation: bob 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+      .student.late { animation-delay: -1.4s; }
+      @keyframes drift { to { transform: translateX(24px); } }
+      @keyframes twinkle { 50% { opacity: .35; transform: scale(.72); } }
+      @keyframes wave { to { transform: rotate(-10deg); } }
+      @keyframes bob { 50% { transform: translateY(-5px); } }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      }
+    </style>
+  </defs>
+  <path d="M0 0h640v440H0z" fill="url(#sky)"/>
+  <circle cx="504" cy="91" r="43" fill="#FFE6A6" opacity=".9"/>
+  <g class="cloud" fill="#F4FBFF" opacity=".86">
+    <path d="M67 105c0-13 11-24 24-24 4 0 8 1 11 3 6-14 20-24 36-24 22 0 40 18 40 40 0 2 0 4-.5 6H83c-9 0-16-1-16-1Z"/>
+    <path d="M383 63c0-9 7-16 16-16 3 0 5 .5 7 1.5 4-9 13-16 24-16 15 0 27 12 27 27v3h-63c-6 0-11 .5-11 .5Z"/>
+  </g>
+  <g class="cloud late" fill="#E2F6FF" opacity=".72">
+    <path d="M486 154c0-8 7-15 15-15 3 0 5 .5 7 1.5 4-9 12-15 22-15 14 0 25 11 25 25v3h-59c-6 0-10 .5-10 .5Z"/>
+  </g>
+  <g class="sparkle" fill="#FFF2BA">
+    <path d="m226 68 4 11 11 4-11 4-4 11-4-11-11-4 11-4 4-11Z"/>
+    <circle cx="572" cy="193" r="5"/>
+  </g>
+  <g class="sparkle late" fill="#FFF2BA">
+    <path d="m92 187 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z"/>
+    <circle cx="359" cy="91" r="4"/>
+  </g>
+  <path d="M0 337c100-32 173-17 270 0s218 16 370-18v121H0V337Z" fill="#5AB58E"/>
+  <path d="M0 367c112-31 212-12 317 3 121 17 219-6 323-26v96H0v-73Z" fill="#398D72"/>
+  <path d="M149 184h333v190H149z" fill="url(#building)"/>
+  <path d="m126 187 190-94 190 94H126Z" fill="#174574"/>
+  <path d="m158 179 158-77 158 77H158Z" fill="#2769A1"/>
+  <path d="M299 115h34v-37h-34z" fill="#F4FAFF"/>
+  <path class="flag" d="M333 80h44l-22 14 22 13h-44V80Z" fill="#FFB75E"/>
+  <path d="M298 374V234c0-10 8-18 18-18s18 8 18 18v140h-36Z" fill="#3976A9"/>
+  <path d="M281 374V232h70v142h-70Z" stroke="#A7C9E7" stroke-width="5"/>
+  <g fill="#8BC5E8">
+    <path d="M178 211h38v42h-38zM242 211h38v42h-38zM368 211h38v42h-38zM432 211h31v42h-31z"/>
+    <path d="M178 275h38v42h-38zM242 275h38v42h-38zM368 275h38v42h-38zM432 275h31v42h-31z"/>
+  </g>
+  <g stroke="#F4FAFF" stroke-width="3" opacity=".85">
+    <path d="M197 211v42m64-42v42m126-42v42m60-42v42M197 275v42m64-42v42m126-42v42m60-42v42"/>
+  </g>
+  <path d="M119 374h394" stroke="#D9ECFA" stroke-width="8" stroke-linecap="round"/>
+  <g>
+    <path d="M84 374V289" stroke="#705341" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="83" cy="272" r="37" fill="#58B980"/>
+    <circle cx="58" cy="289" r="24" fill="#6DCC8D"/>
+    <circle cx="106" cy="290" r="25" fill="#48A975"/>
+  </g>
+  <g>
+    <path d="M553 374v-63" stroke="#705341" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="553" cy="293" r="29" fill="#56B77D"/>
+    <circle cx="532" cy="307" r="20" fill="#6DCC8D"/>
+    <circle cx="573" cy="309" r="20" fill="#48A975"/>
+  </g>
+  <g class="student">
+    <circle cx="229" cy="326" r="11" fill="#F5C29B"/>
+    <path d="M216 369v-27c0-8 6-14 13-14s13 6 13 14v27h-26Z" fill="#F08E63"/>
+    <path d="m220 368-5 15m22-15 5 15" stroke="#174574" stroke-width="6" stroke-linecap="round"/>
+    <path d="m215 344-10 13m37-13 9 11" stroke="#F5C29B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M204 357h13v9h-13z" rx="2" fill="#FFD56B"/>
+  </g>
+  <g class="student late">
+    <circle cx="405" cy="328" r="10" fill="#A96D4C"/>
+    <path d="M393 370v-25c0-7 5-13 12-13s12 6 12 13v25h-24Z" fill="#FFD56B"/>
+    <path d="m397 369-4 14m20-14 4 14" stroke="#174574" stroke-width="6" stroke-linecap="round"/>
+    <path d="m392 347-9 10m33-10 8 11" stroke="#A96D4C" stroke-width="5" stroke-linecap="round"/>
+    <path d="M423 350h21v4h-21z" fill="#F4FAFF"/>
+    <path d="M426 356h17v3h-17z" fill="#B6D8F1"/>
+  </g>
+</svg>
